@@ -28,7 +28,7 @@ let foobar = 838383;
 
 	tests := []struct {
 		expectedIdentifier string
-	} {
+	}{
 		{"x"},
 		{"y"},
 		{"foobar"},
@@ -85,7 +85,7 @@ func TestReturnStatements(t *testing.T) {
 return 5;
 return 10;
 return 993322;
-`;
+`
 	l := lexer.New(input)
 	p := New(l)
 
@@ -166,10 +166,10 @@ func TestIntegerLiteralExpression(t *testing.T) {
 
 func TestParsingPrefixExpression(t *testing.T) {
 	prefixTests := []struct {
-		input string
-		operator string
+		input        string
+		operator     string
 		integerValue int64
-	} {
+	}{
 		{"!5;", "!", 5},
 		{"-15;", "-", 15},
 	}

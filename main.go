@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/wassan128/monkey/repl"
 	"os"
 	"os/user"
-	"github.com/wassan128/monkey/repl"
 )
 
 func main() {
